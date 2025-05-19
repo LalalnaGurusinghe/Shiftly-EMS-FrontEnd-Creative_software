@@ -7,9 +7,9 @@ import ProjectsList from "./ProjectsList";
 import TimesheetLegend from "./TimesheetLegend";
 
 /**
- * Main Timesheet component that orchestrates all sub-components
- * @returns {JSX.Element} The complete Timesheet interface
- */
+  Main Timesheet component that orchestrates all sub-components
+ @returns {JSX.Element} The complete Timesheet interface
+ **/
 export default function Timesheet(){
   return (
     <>

@@ -234,8 +234,8 @@ const UpdateTimesheet = () => {
     
     setLoading(true);
     try {
-      // In a real app, you would send a delete request to your API here
-      // For now, we'll just simulate a delay
+      // In final app, would send a delete request to API here after codereview
+      //simulated  delay
       await new Promise(resolve => setTimeout(resolve, 800));
       
       // Clear all rows and add a single empty row
@@ -247,7 +247,7 @@ const UpdateTimesheet = () => {
         hours: Array(7).fill(""),
       };
       
-      // Important: Set a new array with only the empty row, not appending to existing rows
+      // Set a new array with only the empty row, not appending to existing rows
       setRows([emptyRow]);
       
       setMessage({ text: "All timesheet entries deleted successfully", type: "success" });
@@ -271,8 +271,8 @@ const UpdateTimesheet = () => {
     }
     
     try {
-      // In a real app, you would send data to your API here
-      // For now, we'll just simulate a delay
+      // In fianl app,  would send data to  API here
+      // simulated delay
       await new Promise(resolve => setTimeout(resolve, 800));
       
       // Prepare data for submission
@@ -462,7 +462,7 @@ const UpdateTimesheet = () => {
         <span className="mt-2.5 ml-2 text-black">{totalHours.actual}/{totalHours.expected}</span>
       </div>
 
-      {/* Date Selection Dialog with separate year, month, day selectors */}
+       {/* Date Selection Dialog with separate year, month, day selectors */}
       <Dialog
         open={isCalendarOpen}
         onClose={handleCalendarClose}
